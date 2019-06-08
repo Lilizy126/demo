@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> </title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			a{
+				text-decoration: none;
+				color: black;
+			}
+			ul,ol,li{
+				list-style: none;
+			}
+			p,a{
+				font-family: '微软雅黑';
+			}
+			body{
+				width: 100%;
+				min-width:1400px;
+			}
+			.header{
+				background: url(images/qq.jpg) no-repeat;
+				background-position: 320px center;
+				width: 100%;
+				height: 30px;
+				background-color: rgb(244,244,244);
+			}
+			.header a{
+				text-decoration: none;
+				color: black;
+				font-size: 12px;
+				line-height: 30px;
+				height: 30px;
+				float: left;
+			}
+			.header p{
+				font-size: 12px;
+				line-height: 30px;
+				height: 30px;
+				float: left;
+			}
+			.hd1{
+				padding-left: 180px;
+			}
+			.hd2{
+				padding-left: 10px;
+			}
+			.hd3{
+				padding-left: 27px;
+			}
+			#head3{
+				font-size: 13.11px;
+			}
+			.hd4{
+				padding-left: 750px;
+			}
+			.hd5{
+				padding-left: 10px;
+			}
+			.logo{
+				background-color: rgb(255,255,255);
+				width: 100%;
+				height: 120px;
+				background:url(images/logo.jpg) no-repeat;
+				background-position: 180px center;
+			}
+			.ssk{
+				float: left;
+				width: 600px;
+				height: 80px;
+				text-align: center;
+				padding-left: 562px;
+				padding-top: 39px;
+			}
+			.kuang{
+				width: 405px;
+				height: 38px;
+				border: 2px solid rgb(248,56,56);
+				font-size: 14px;
+				color: rgb(197,197,197);
+				padding-left: 16px;
+				float: left;
+			}
+			#search{
+				font-size: 16px;
+				color: white;
+				float: left;
+				height: 42px;
+				line-height: 42px;
+				width: 92px;
+				background-color: rgb(248,56,56);
+			}
+			.gwc{
+				border: 1px solid rgb(227,227,227);
+				background: url(images/gwc.jpg) no-repeat;
+				background-position: 25px center;
+				background-color: rgb(245,245,245);
+				width: 150px;
+				height: 42px;
+				margin-left: 75px;
+				margin-top: 38px;
+				float: left;
+			}
+			.gwc p{
+				height: 42px;
+				line-height: 42px;
+				font-size: 14px;
+				float: left;
+			}
+			#gwc1{
+				padding-left: 44px;
+			}
+			#red{
+				color: red;
+			}
+			.cls1{
+				background-color: rgb(255,255,255);
+				border-bottom: 3px solid rgb(224,3,4);
+				width: 100%;
+				height: 34px;
+			}
+			.inline{
+				width: 100%;
+				height: 34px;
+				line-height: 34px;
+			}
+			.inline li{
+				height: 34px;
+				display: inline;
+			}
+			.inline a{
+				height: 34px;
+				padding-right: 48px;
+				font-size: 16px;
+			}
+			.ahv{
+				text-align: center;
+				border border-radius: 2px;
+				width: 90px;
+				height: 32px;
+				display: inline-block;
+			}
+			.inline a:hover{
+				color: white;
+			}
+			.inline a:hover .ahv{
+				border-radius: 4px;
+				background-color: rgb(253,3,4);
+			}
+			#sy{
+				padding-left: 180px;
+			}
+			.body{
+				width: 100%;
+				height: 650px;
+				background-color: rgb(251,251,251);
+			}
+			.cls2{
+				margin: 0 auto;
+				padding-top: 28px;
+				width: 1200px;
+				height: 14px;
+				background-color: rgb(251,251,251);
+			}
+			.cls2 p,a{
+				display: inline;
+				font-size: 14px;
+			}
+			#dq{
+				margin: 0 auto;
+			}
+			.main{
+				margin: 0 auto;
+				padding-top: 30px;
+				width: 1200px;
+				height: 585px;
+				background-color: rgb(251,251,251);
+			}
+			.left{
+				float: left;
+				width: 215px;
+				height: 585px;
+				background-color: rgb(251,251,251);
+			}
+			.fenlei{
+				background: url(images/menu.jpg) no-repeat;
+				background-position: 30px center;
+				background-color: rgb(255,255,255);
+				text-align: center;
+				height: 44px;
+				width: 215px;
+			}
+			.fenlei a{
+				height: 44px;
+				line-height: 44px;
+				font-size: 16px;
+			}
+			.fenlei2{
+				margin-top: 10px;
+				width: 215px;
+				height: 505px;
+				background-color: rgb(255,255,255);
+			}
+			.fenlei2 a{
+				padding-left: 75px;
+			}
+			#selected{
+				color: rgb(253,3,4);
+			}
+			.right{
+				float: left;
+				background-color: rgb(255,255,255);
+				height: 559px;
+				width: 970px;
+				margin-left: 10px;
+			}
+			.goods{
+				text-align: center;
+				float: left;
+				border: 1px solid rgb(219,219,219);
+				width: 220px;
+				height: 250px;
+				margin-left: 18px;
+				margin-top: 18px;
+			}
+			.goods p{
+				text-align: center;
+				line-height: 28px;
+			}
+			.name{
+				color: rgb(163,163,163);
+				font-size: 16px;
+			}
+			.price{
+				font-size: 15px;
+			}
+			.last{
+				text-align: center;
+				margin-top: 10px;
+				width: 100%;
+				height: 250px;
+				background-color: rgb(46,46,46);
+			}
+			.footer{
+				text-align: center;
+				margin: 0 auto;
+				border-bottom: 1px solid rgb(69,69,69);
+				width: 1200px;
+				height: 150px;
+			}
+			.footer li{
+				text-align: left;
+				display: inline;
+			}
+			.footer a{
+				font-weight: lighter;
+				line-height: 30px;
+				height: 30px;
+				color:white;
+				font-size: 14px;
+			}
+			.bigger a{
+				line-height: 50px;
+				height: 50px;
+				font-size: 16px;
+			}
+			.footer div{
+				width: 270px;
+				display: inline-block;
+			}
+			.bigger div{
+				height: 50px;
+			}
+			#lastest{
+				width: 90px;
+			}
+			.tail{
+				margin: 0 auto;
+				width: 560;
+				height: 80px;
+				margin-top: 15px;
+				color: rgb(164,164,164);
+			}
+			.tail li{
+				display: inline;
+			}
+			.tail>li a,p{
+				height: 35px;
+				line-height: 35px;
+				display: inline;
+			}
+			#icp{
+				color: rgb(164,164,164);
+				font-size: 14px;
+			}
+			.shu{
+				font-size: 14px;
+				color: rgb(164,164,164);
+			}
+			.tail a{
+				font-size: 14px;
+				color: rgb(164,164,164);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<a href="#" class="hd1">我的收藏</a>
+			<a href="#" class="hd2">E族之家手机版</a>
+			<p class="hd3" id="head3">328203328</p>
+			<a href="#" class="hd4">扫描加入</a>
+			<p class="hd5">欢迎来到E族之家，请</p>
+			<a href="#" class="hd6">登录</a>
+			<p class="hd7">&nbsp|&nbsp</p>
+			<a href="#" class="hd8">注册</a>
+		</div>
+		<div class="logo">
+			<form>
+				<div class="ssk">
+					<input class="kuang" type="text" name="sousuok" value="请输入关键词!" />
+					<a href="#">
+						<div id="search"><p>搜索</p></div>
+					</a>
+				</div>
+				<a href="#">
+					<div class="gwc">
+						<p id="gwc1">购物车(</p>
+						<p id="red">0</p>
+						<p>)件</p>
+					</div>
+				</a>
+			</form>
+		</div>
+		<div class="cls1">
+			<ul class="inline">
+				<li id="sy"><a href="#"><div class="ahv">首页</div></a></li>
+				<li><a href="#"><div class="ahv">E族生活</div></a></li>
+				<li><a href="#"><div class="ahv">E族服务</div></a></li>
+				<li><a href="#"><div class="ahv">E族爱心</div></a></li>
+			</ul>
+		</div>
+		<div class="body">
+			<div class="cls2">
+				<p id="dq">当前位置：</p>
+				<a href="#">E族爱心</a>
+				<p>></p>
+				<a href="#">食品</a>
+			</div>
+			<div class="main">
+				<div class="left">
+					<div class="fenlei">
+						<a href="#">全部分类</a>
+					</div>
+					<div class="fenlei2">
+						<a id="selected" href="#">>食品</a><br/><br/>
+						<a href="#">>生活用品</a>
+					</div>
+				</div>
+				<div class="right">
+					<div class="goods">
+						<a href="#">
+							<img src="images/pic1.jpg">
+							<p class="name">精品辣椒100g</p><br/>
+							<p class="price">¥90.00</p>
+						</a>
+					</div>
+					<div class="goods">
+						<a href="#">
+							<img src="images/pic2.jpg">
+							<p class="name">特级百香果3斤</p><br/>
+							<p class="price">¥90.00</p>
+						</a>
+					</div>
+					<div class="goods">
+						<a href="#">
+							<img src="images/pic3.jpg">
+							<p class="name">万威啤酒500ml</p><br/>
+							<p class="price">¥90.00</p>
+						</a>
+					</div>
+					<div class="goods">
+						<a href="#">
+							<img src="images/pic4.jpg">
+							<p class="name">万威啤酒500ml</p><br/>
+							<p class="price">¥90.00</p>
+						</a>
+					</div>
+					<div class="goods">
+						<a href="#">
+							<img src="images/pic5.jpg">
+							<p class="name">精品辣椒100g</p><br/>
+							<p class="price">¥90.00</p>
+						</a>
+					</div>
+					<div class="goods">
+						<a href="#">
+							<img src="images/pic6.jpg">
+							<p class="name">特级百香果3斤</p><br/>
+							<p class="price">¥90.00</p>
+						</a>
+					</div>
+					<div class="goods">
+						<a href="#">
+							<img src="images/pic7.jpg">
+							<p class="name">万威啤酒500ml</p><br/>
+							<p class="price">¥90.00</p>
+						</a>
+					</div>
+					<div class="goods">
+						<a href="#">
+							<img src="images/pic8.jpg">
+							<p class="name">万威啤酒500ml</p><br/>
+							<p class="price">¥90.00</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="last">
+			<div class="footer">
+				<ul class="bigger">
+					<li><a href="#"><div>新手上路</div></a></li>
+					<li><a href="#"><div>配送方式</div></a></li>
+					<li><a href="#"><div>购物指南</div></a></li>
+					<li><a href="#"><div>售后服务</div></a></li>
+					<li><a href="#"><div id="lastest">关于我们</div></a></li>
+				</ul>
+				<ul>
+					<li><a href="#"><div>售后流程</div></a></li>
+					<li><a href="#"><div>货到付款区域</div></a></li>
+					<li><a href="#"><div>常见问题</div></a></li>
+					<li><a href="#"><div>退换货原则</div></a></li>
+					<li><a href="#"><div id="lastest">网络故障报告</div></a></li>
+				</ul>
+				<ul>
+					<li><a href="#"><div>购物流程</div></a></li>
+					<li><a href="#"><div>配送支付查询</div></a></li>
+					<li><a href="#"><div>订购流程</div></a></li>
+					<li><a href="#"><div>售后服务保证</div></a></li>
+					<li><a href="#"><div id="lastest">联系我们</div></a></li>
+				</ul>
+				<ul>
+					<li><a href="#"><div>订购方式</div></a></li>
+					<li><a href="#"><div>支付方式说明</div></a></li>
+					<li><a href="#"><div>注册新会员</div></a></li>
+					<li><a href="#"><div>换货流程</div></a></li>
+					<li><a href="#"><div id="lastest">投诉与建议</div></a></li>
+				</ul>
+			</div>
+			<div class="tail">
+				<ul>
+					<li><a href="#">E族生活</a></li>
+					<li><p class="shu">&nbsp|&nbsp</p></li>
+					<li><a href="#">居家维修保养</a></li>
+					<li><p class="shu">&nbsp|&nbsp</p></li>
+					<li><a href="#">住宿优惠信息</a></li>
+					<li><p class="shu">&nbsp|&nbsp</p></li>
+					<li><a href="#">出行接送</a></li>
+					<li><p class="shu">&nbsp|&nbsp</p></li>
+					<li><a href="#">E族活动</a></li>
+					<li><p class="shu">&nbsp|&nbsp</p></li>
+					<li><a href="#">E族爱心</a></li>
+					<li><p class="shu">&nbsp|&nbsp</p></li>
+					<li><a href="#">积分商城</a></li>
+				</ul>
+				<p id="icp">©2017-2018&nbspE族之家&nbsp版权所有，并保留所有权利。ICP备案证书号：粤ICP备17127392号</p>
+			</div>
+		</div>
+	</body>
+</html>
